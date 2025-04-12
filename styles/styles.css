@@ -146,15 +146,17 @@ body {
     color: var(--white);
     padding: 0.5rem;
     border-radius: var(--border-radius);
-    font-size: var(--font-size-small);
+    /* font-size: var(--font-size-small); */
 }
-
+.link-button:hover {
+    background-color: var(--flat-black);
+}
 /* |||||||||||||||||||||||| sections ||||||||||||||||| */
 
 /* header */
 .header {
     background-color: var(--header-hero-bacground-color);
-    padding: 0 var(--padding);
+    padding: var(--padding);
     position: relative;
 }
 .company-name {
@@ -176,9 +178,10 @@ body {
 .call-now {
     font-weight: 500;
 }
-.call-now:hover {
-    background-color: var(--flat-black);
+.call-now:nth-of-type(2) {
+    display: none;
 }
+
 .hamburger {
     padding: 0.4rem;
     color: black;
@@ -306,7 +309,7 @@ body {
         position: absolute;
         left: 0;
         right: 0;
-        top: 50px;
+        top: 80px;
     }
     .header__ul li a {
         padding: 0.5rem;
@@ -334,5 +337,8 @@ body {
 
     .header:has(.hamburger.show) .header__nav {
         display: block;
+    }
+    .call-now:nth-of-type(2) {
+        display: inline-block;
     }
 }
