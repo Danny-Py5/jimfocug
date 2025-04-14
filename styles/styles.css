@@ -270,4 +270,9 @@ footer {
     .contact__element-container {
         flex-direction: column;
     }
+
+    .hero__wrapper {
+        /* display: flex; */
+        padding: var(--padding);
+    }
 }

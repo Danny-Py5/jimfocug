@@ -14,9 +14,9 @@ html {
     scroll-margin-top: 800px;
 }
 h1 {
-    font-size: clamp(3rem, 6vw, 5rem);
+    font-size: clamp(2.5rem, 7vw, 3rem);
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 70px;
+    line-height: 50px;
     font-weight: 800;
     margin-bottom: 2rem;
 }
