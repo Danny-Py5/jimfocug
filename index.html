@@ -29,7 +29,7 @@
         <script type="text/javascript">
             (function () {
                 emailjs.init({
-                    publicKey: "DjpIpMpUSxscY1ua_",
+                    publicKey: "sGYP9z37qRoFjf1Fp",
                 });
             })();
         </script>
@@ -442,7 +442,7 @@
                             <p>Tel: 07035162444</p>
                         </address>
 
-                        <form action="#" class="contact__form" id="form">
+                        <form action="vo" class="contact__form" id="form">
                             <!-- name -->
                             <div class="contact__form-name-cont">
                                 <div class="name-field"
@@ -477,8 +477,21 @@
                                     id="message"
                                     rows="3"></textarea>
                             </div>
-                            <button type="submit">Submit</button>
+                            <button type="submit"
+                                ><div class="submit-preload"></div>
+                                Submit</button
+                            >
                         </form>
+
+                        <!-- The dialog/modal -->
+                        <dialog id="myModal">
+                            <img width="200" src="img/email-sent.webp" alt="" />
+
+                            <p>Email Sent Successfully</p>
+                            <button id="close-modal" class="close-modal"
+                                >Ok</button
+                            >
+                        </dialog>
                     </div>
                 </div>
             </section>
