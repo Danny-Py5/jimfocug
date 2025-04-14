@@ -10,6 +10,17 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
         <link rel="stylesheet" href="styles/styles.css" />
+
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init({
+                    publicKey: "DjpIpMpUSxscY1ua_",
+                });
+            })();
+        </script>
     </head>
     <body>
         <header class="header" id="header">
@@ -20,13 +31,16 @@
                     <ul
                         class="header__ul center-flex center-flex--space-between">
                         <li>
-                            <a class="header__a" href="#home">Home</a>
+                            <a class="header__a" href="#">Home</a>
                         </li>
                         <li>
                             <a class="header__a" href="#service">Service</a>
                         </li>
                         <li>
                             <a class="header__a" href="#about">About</a>
+                        </li>
+                        <li>
+                            <a class="header__a" href="#contact">Contact</a>
                         </li>
                         <li>
                             <a class="header__a no-wrap" href="#home"
@@ -49,16 +63,19 @@
         </header>
 
         <section class="hero section" id="hero">
-            <div class="hero-wrapper section-wrapper">
+            <div class="hero__wrapper section-wrapper">
                 <div class="hero__information">
-                    <h1>The Power of Process Improvement</h1>
+                    <h1
+                        >The Power of Process
+                        <span style="word-wrap: normal">Improvement</span></h1
+                    >
 
                     <p
                         >Improve your business operations with our
                         <span class="no-wrap">cost-effective</span> management
                         systems and process automation techniques.
                     </p>
-                    <a href="" class="link-button">Learn More</a>
+                    <a href="#about" class="link-button">Learn More</a>
                     <a
                         href="tel:+2347035162444"
                         class="link-button call-now no-wrap"
@@ -150,7 +167,7 @@
                             </div>
                         </div>
 
-                        <div class="service__card card">
+                        <div class="service__card card slideUp--delay1">
                             <div
                                 data-testid="svgRoot-comp-kq9ag33l"
                                 class="AKxYR5 VZYmYf comp-kq9ag33l"
@@ -222,7 +239,7 @@
                             </div>
                         </div>
 
-                        <div class="service__card card">
+                        <div class="service__card card slideUp--delay2">
                             <div
                                 data-testid="svgRoot-comp-kq5dfsf71"
                                 class="AKxYR5 VZYmYf comp-kq5dfsf71"
@@ -398,7 +415,66 @@
                         class="about-cont about__img-ilustration-container"></div>
                 </section>
             </section>
+
+            <!-- contact -->
+            <section class="contact section" id="contact">
+                <div class="contact__wrapper section-wrapper">
+                    <h2 class="contact__h2">Contact</h2>
+                    <p class="contact__heading"
+                        ><strong>Let's Work Together</strong></p
+                    >
+                    <div class="contact__element-container">
+                        <address class="contact__element">
+                            <p>18, Imafon Street, Akure, Ondo State.</p>
+                            <p>info@busautomate.com</p>
+                            <p>Tel: 07035162444</p>
+                        </address>
+
+                        <form action="#" class="contact__form" id="form">
+                            <!-- name -->
+                            <div class="contact__form-name-cont">
+                                <div class="name-field"
+                                    ><label for="first-name">First Name</label>
+                                    <input
+                                        type="text"
+                                        name="first-name"
+                                        id="first-name" />
+                                </div>
+                                <div class="name-field"
+                                    ><label for="last-name">Last Name</label>
+                                    <input
+                                        type="text"
+                                        name="last-name"
+                                        id="last-name"
+                                /></div>
+                            </div>
+                            <!-- email -->
+                            <div>
+                                <label for="email">Email</label>
+                                <input
+                                    type="email"
+                                    required
+                                    name="email"
+                                    id="email" />
+                            </div>
+                            <!-- message box -->
+                            <div>
+                                <label for="message">Leave us a message</label>
+                                <textarea
+                                    name="message"
+                                    id="message"
+                                    rows="3"></textarea>
+                            </div>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
         </main>
+
+        <footer
+            >&copy; 2025 Powered and secured by <a href="#">Jimfocug</a></footer
+        >
     </body>
 
     <script src="scripts.js"></script>

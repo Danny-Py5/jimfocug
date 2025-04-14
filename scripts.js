@@ -16,3 +16,19 @@ hamburger.addEventListener("click", function () {
 //     if (e.target.outerWidth > 700) {
 //     }
 // });
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("slideUp");
+        } else {
+            entry.target.classList.remove("slideUp");
+        }
+    });
+});
+
+document.querySelectorAll(".service__card").forEach((card) => {
+    observer.observe(card);
+});
+
+function sendEmail() {}
