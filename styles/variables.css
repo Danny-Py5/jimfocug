@@ -1,0 +1,38 @@
+/* || VARIABLES */
+:root {
+    --font-size: clamp(1rem, 1.5vh, 1.2rem);
+    --font-size-large: clamp(2rem, 4vh, 4rem);
+    --font-size-small: 0.95rem;
+    --heading-font-size: min(100vw, 35px);
+
+    /* COLOR */
+    --color: grey;
+    --primary-color: rgb(141, 3, 210);
+    --flat-black: rgb(43, 43, 43);
+    --bg-color: var(--primary-color);
+    --white: rgb(255, 255, 255);
+    --header-hero-bacground-color: #ffd5ff;
+
+    /* PADDING */
+    --header-padding: 0.8rem;
+    --padding: 1rem;
+    --padding-small: 0.5rem;
+    --padding-tb: 0.7rem;
+    --section-padding-top: 78px;
+    --section-padding-bottom: 48px;
+
+    /* WIDTH */
+    --section-max-width: 900px;
+
+    /* ANIMATION */
+    --animation-duration-long: 1s;
+    --animation-duration-short: 0.25s;
+    --animation-duration-very-short: 0.25s;
+    --animation-duration: 0.5s;
+
+    --transition-duration: 0.5s;
+
+    /* BORDER */
+    --border-radius: 16px;
+    --border-radus-L: 1rem;
+}
